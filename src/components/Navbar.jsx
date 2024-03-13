@@ -34,11 +34,11 @@ export default function Navbar() {
     const navItems =[
         {
            name:'Home',
-            path:'/home'
+            path:'home'
         },
         {
            name:'About',
-            path:'/about'
+            path:'about'
         },
         {
            name:'Services',
