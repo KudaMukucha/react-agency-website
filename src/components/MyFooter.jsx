@@ -7,7 +7,7 @@ import logo from '../assets/web-design.png'
 
 export default function MyFooter() {
   return (
-    <Footer className='px-4 lg:px-14 py-2'>
+    <Footer className='px-4 lg:px-14 py-2' id='contact'>
     <div className="w-full">
       <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
         <div className='space-y-4'>

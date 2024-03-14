@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import logo from '../assets/web-design.png'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import {Link } from 'react-scroll'
 import { FaXmark,FaBars } from 'react-icons/fa6'
 
 export default function Navbar() {
@@ -42,15 +43,15 @@ export default function Navbar() {
         },
         {
            name:'Services',
-            path:'/services'
+            path:'services'
         },
         {
            name:'Products',
-            path:'/products'
+            path:'products'
         },
         {
            name:'Contact',
-            path:'/contact'
+            path:'contact'
         },
     ]
   return (
@@ -67,7 +68,7 @@ export default function Navbar() {
                     {
                         navItems.map((link,i)=>{
                             return(
-                            <Link key={i} to={link.path} spy={true} smooth={true} offset={-100} className={'block text-base text-gray-900 hover:text-brandPrimary first:font-medium'} >
+                            <Link key={i} to={link.path} spy={true} smooth={true} offset={-100} className={'block text-base text-gray-900 hover:text-brandPrimary first:font-medium cursor-pointer'} >
                                 {link.name}
                             </Link>
                             )
